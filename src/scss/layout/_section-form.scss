@@ -1,0 +1,51 @@
+@use 'utilities/variables' as var;
+@use 'utilities/mixins' as mix;
+
+.section {
+  &__grid {
+    @include mix.tablet {
+      @include mix.grid(2, var.$spacing-5)
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var.$primary-color;
+    padding: var.$spacing-5;
+  }
+  &__title {
+    color: var.$white;
+    text-align: center;
+  }
+  &__camp {
+    margin-bottom: 1rem;
+    label {
+      display: block;
+      color: var.$white;
+      margin: 1rem 0;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    input {
+      width: 100%;
+      padding: 1.3rem;
+      border: none;
+    }
+    input[type="submit"] {
+      @include mix.button(var.$secondary-color, var.$white);
+      margin-top: 3rem;
+    }
+  }
+  &__container-img {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+    width: 30rem;
+    @include mix.desktop {
+      width: 100%;
+    }
+  }
+}

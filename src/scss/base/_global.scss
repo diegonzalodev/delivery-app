@@ -1,0 +1,55 @@
+@use 'utilities/variables' as var; 
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var.$principal-font;
+    font-size: 1.6rem;
+}
+
+p {
+    color: var.$black;
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, 
+h2, 
+h3 {
+    margin: 0 0 var.$spacing-5 0 ;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}

@@ -1,0 +1,15 @@
+@use 'variables' as var; 
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primario {
+    background-color: var.$primary-color;
+}
